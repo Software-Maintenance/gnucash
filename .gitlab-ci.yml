@@ -26,6 +26,8 @@ build:
 test:
   stage: test
   script:
+    - cmake -DCMAKE_INSTALL_PREFIX=$PWD/..
+    - make
     - make check
     - ehco "Unit tests passed"
 
