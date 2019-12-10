@@ -23,6 +23,11 @@ build:
     paths:
       - build/
 
+test:
+  stage: test
+  script:
+    -make check
+
 after_script:
-  - echo "Build successful"
+  - echo "Build and Unit Tests successful"
       
