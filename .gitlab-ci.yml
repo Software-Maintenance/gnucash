@@ -26,7 +26,7 @@ build:
 test:
   stage: test
   script:
-    -make check
+    - make check
 
 after_script:
   - echo "Build and Unit Tests successful"
